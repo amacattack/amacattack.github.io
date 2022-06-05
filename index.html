@@ -17,19 +17,19 @@
     </header>
     <div class="inspo-quote">
         <h2>Quote of the Day</h2>
-        <div class="content">
+        <div class="content" id="hiddenContent" hidden>
             <div class="quote-area">
                 <i class="fas fa-quote-left"></i>
-                <p class="quote" id="getResult"></p>
+                <p class="quote" id="getQuote"></p>
                 <i class="fas fa-quote-right"></i>
             </div>
             <div class="author">
-                <span>_</span>
-                <span class="name">Mary Kay</span>
+                <span>-</span>
+                <span class="name" id="getAuthor"></span>
             </div>
         </div>
         <div class="quote-button">
-            <button class="active-quote-btn"onclick="performGetRequest()">New Quote</button>
+            <button class="active-quote-btn">Wanna Quote</button>
         </div>
     </div>
     <form>

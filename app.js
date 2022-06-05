@@ -147,13 +147,22 @@ function getTodos() {
 // Function gets a random quote from goprogram.ai/inspiration
 async function performGetRequest() {
     console.log('sending get req')
-    var resultElement = document.getElementById('getResult');
-    resultElement.innerHTML = '';
+    const quoteElement = document.getElementById('getQuote');
+    const authorElement = document.getElementById('getAuthor');
+    quoteElement.innerHTML = '';
+    authorElement.innerHTML = '';
 
     try {
         const response = await axios.get("https://api.goprogram.ai/inspiration")
-        console.log('resp: ', response)
-   
+        // Display Quote
+        const quoteText = response.data.quote;
+        quoteElement.innerHTML = quoteText;
+        // Display Author
+        const quoteAuthor = response.data.author;
+        authorElement.innerHTML = quoteAuthor;
+        // Unhide content
+        const hiddenContent = document.getElementById('hiddenContent').hidden = false;
+
     } catch (error) {
         console.error('error: ', error)
     }
