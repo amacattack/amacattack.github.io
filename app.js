@@ -144,46 +144,16 @@ function getTodos() {
     });
 }
 
-// Function gets a random quote from zenquotes.io 
+// Function gets a random quote from goprogram.ai/inspiration
 async function performGetRequest() {
     console.log('sending get req')
     var resultElement = document.getElementById('getResult');
     resultElement.innerHTML = '';
 
-///////////////////////////////////////////////////////////////////////////
-    // const resp = fetch("https://zenquotes.io/api/random", {
-    //     mode: 'no-cors',
-    // })
-    //     .then((response) => response)
-    //     .catch(error => console.error(error))
-
-//////////////////////////////////////////////////////////////////////////////////////////
     try {
-        const response = await fetch("https://api.themotivate365.com/stoic-quote")
-        console.log('vanilla resp: ', response)
-        // var data = await response.json();
-        // console.log(data);        
-
-        const newResponse = await fetch("https://api.themotivate365.com/stoic-quote", {
-            "headers": {
-                "accept": "*/*",
-                "accept-language": "en-US,en;q=0.9",
-                "if-none-match": "W/\"b5-6659y/NgZiUpPmjekLAc9mFgj1c\"",
-                "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"102\", \"Google Chrome\";v=\"102\"",
-                "sec-ch-ua-mobile": "?0",
-                "sec-ch-ua-platform": "\"macOS\"",
-                "sec-fetch-dest": "empty",
-                "sec-fetch-mode": "cors",
-                "sec-fetch-site": "cross-site"
-            },
-            "referrer": "http://127.0.0.1:5500/",
-            "referrerPolicy": "strict-origin-when-cross-origin",
-            "body": null,
-            "method": "GET",
-            "mode": "cors",
-            "credentials": "omit"
-            });
-        console.log("new resp:", newResponse);
+        const response = await axios.get("https://api.goprogram.ai/inspiration")
+        console.log('resp: ', response)
+   
     } catch (error) {
         console.error('error: ', error)
     }
