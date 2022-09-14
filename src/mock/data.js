@@ -2,25 +2,26 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Alyssa | Developer', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: `Welcome to my website`, // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
+  title: 'Hello, my name is',
+  name: 'Alyssa',
+  subtitle: `I'm a Frontend Developer!`,
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  img: 'profPic.jpg',
+  paragraphOne: `Software can make everyones' lives easier. My mission is to continue developing 
+    and applying my skills in software to build a more sustainable world. Also it's cool to build things. 
+    Because I enjoy coding, I believe that I can be a part of a generation that makes a sustainable world 
+    a reality.`,
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
@@ -29,29 +30,31 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Flavali',
+    info: `Who doesn't like trying new foods and flavors? I certainly do, which is why I am currently 
+    building and designing a culinary tasting scorecard app with React, Material-UI, and Redux.
+    Also, to ensure users' could save their games, I collaborated on Git to integrate a Google Cloud Firestore backend.`,
+    url: 'https://flavali.vercel.app',
+    repo: 'https://github.com/amacattack/flavali', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Todo List',
+    info: `As a first solo project, I built a persistent todo list web app with JavaScript, HTML, and 
+    CSS using local storage. I also integrated an API to display a daily inspirational quote on the web app 
+    to keep motivation alive.`,
+    url: 'https://amacattack.github.io/todo-list/',
+    repo: 'https://github.com/amacattack/todo-list', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Card Matching Game',
+    info: `To get an understanding of data structures, I implemented game logic with JavaScript to complete this responsive 
+    hiking card matching game.`,
+    url: 'https://amacattack.github.io/matching-game/',
+    repo: 'https://github.com/amacattack/matching-game', // if no repo, the button will not show up
   },
 ];
 
@@ -59,7 +62,7 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: '',
+  email: 'amannaioni210@gmail.com',
 };
 
 // FOOTER DATA
