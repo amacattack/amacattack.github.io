@@ -17,6 +17,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
+  // img: 'profPic-cropped.png',
   img: 'profPic.jpg',
   paragraphOne: `Software can make everyones' lives easier. My mission is to continue developing 
     and applying my skills in software to build a more sustainable world. Also it's cool to build things. 
@@ -29,7 +30,7 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'flavali.png',
     title: 'Flavali',
     info: `Who doesn't like trying new foods and flavors? I certainly do, which is why I am currently 
     building and designing a culinary tasting scorecard app with React, Material-UI, and Redux.
@@ -39,17 +40,17 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'todoWebApp.png',
     title: 'Todo List',
     info: `As a first solo project, I built a persistent todo list web app with JavaScript, HTML, and 
-    CSS using local storage. I also integrated an API to display a daily inspirational quote on the web app 
+    CSS using local storage to further my understanding of JavaScript. I also integrated an API to display a daily inspirational quote on the web app 
     to keep motivation alive.`,
     url: 'https://amacattack.github.io/todo-list/',
     repo: 'https://github.com/amacattack/todo-list', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'cardMatchingGame.png',
     title: 'Card Matching Game',
     info: `To get an understanding of data structures, I implemented game logic with JavaScript to complete this responsive 
     hiking card matching game.`,
@@ -61,7 +62,7 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: '',
-  btn: '',
+  btn: `Let's Chat`,
   email: 'amannaioni210@gmail.com',
 };
 
@@ -70,28 +71,18 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
+      name: 'github',
+      url: 'https://github.com/amacattack',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '',
+      url: 'www.linkedin.com/in/alyssa-mannaioni',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
