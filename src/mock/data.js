@@ -23,7 +23,7 @@ export const aboutData = {
     and applying my skills in software to build a more sustainable world. Also it's cool to build things. 
     Because I enjoy coding, I believe that I can be a part of a generation that makes a sustainable world 
     a reality.`,
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: `https://docs.google.com/document/d/1sB6pBsXFhtTX2bh2Z8qvHCdSfDJWcKozv_fYYVSOvaU/edit?usp=sharing`,
 };
 
 // PROJECTS DATA
