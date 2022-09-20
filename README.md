@@ -53,13 +53,13 @@ From your command line, first clone Simplefolio:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/cobidev/gatsby-simplefolio
+$ git clone https://github.com/amacattack/amacattack.github.io
 
 # Go into the repository
-$ cd gatsby-simplefolio
+$ cd amacattack.github.io
 
-# Remove current origin repository
-$ git remote remove origin
+# Check out the develop branch
+$ git checkout develop
 ```
 
 Then you can install the dependencies either using NPM or Yarn:
@@ -74,16 +74,6 @@ $ npm install
 $ npm run develop
 ```
 
-Using Yarn:
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start development server
-$ yarn develop
-```
-
 **NOTE**:
 If your run into issues installing the dependencies with NPM, use this command:
 
@@ -93,10 +83,6 @@ $ sudo npm install --unsafe-perm=true --allow-root
 ```
 
 Once your server has started, go to this url `http://localhost:8000/` and you will see the website running on a Development Server:
-
-<h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.png" alt="Gatsby Simplefolio" width="100%">
-</h2>
 
 ---
 
@@ -234,12 +220,15 @@ $secondary-color: #00cdac;
 
 Once you have done with your setup. You need to put your website online!
 
-I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
+#### Deploying on Github Pages
 
-## Others versions 👥
+To deploy to github pages, run the gatsby build script with
 
-[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
-[Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
+```bash
+npm run deploy
+```
+
+MAKE SURE your changes are made on develop branch before deploying. The main branch will only contain the generated files necessary for hosting on GitHub Pages.
 
 ## Technologies used 🛠️
 
@@ -249,18 +238,6 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Front-End UI library
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
 
-## Authors
-
-- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
-
-## Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
-
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments 🎁
-
-I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
