@@ -32,8 +32,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'flavali.png',
     title: 'Flavali',
-    info: `Who doesn't like trying new foods and flavors? I certainly do, which is why I am currently 
-    building and designing a culinary tasting scorecard app with React, Material-UI, and Redux.
+    info: `Who doesn't like trying new foods and flavors? I certainly do, which is why I
+    built and designed a culinary tasting scorecard app with React, Material-UI, and Redux.
     Also, to ensure users' could save their games, I collaborated on Git to integrate a Google Cloud Firestore backend.`,
     url: 'https://flavali.vercel.app',
     repo: 'https://github.com/amacattack/flavali', // if no repo, the button will not show up
