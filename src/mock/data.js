@@ -17,13 +17,13 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  // img: 'profPic-cropped.png',
   img: 'profPic.jpg',
   paragraphOne: `Software can make everyones' lives easier. My mission is to continue developing 
     and applying my skills in software to build a more sustainable world. Also it's cool to build things. 
     Because I enjoy coding, I believe that I can be a part of a generation that makes a sustainable world 
     a reality.`,
-  resume: `https://docs.google.com/document/d/1sB6pBsXFhtTX2bh2Z8qvHCdSfDJWcKozv_fYYVSOvaU/edit?usp=sharing`,
+  resume:
+    'https://docs.google.com/document/d/1EF8HJmifrOfc2d530hAy3nnBXSWV4d2HwOyQnoAHv1M/edit?usp=sharing',
 };
 
 // PROJECTS DATA
@@ -40,22 +40,21 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'todoWebApp.png',
-    title: 'Todo List',
-    info: `As a first solo project, I built a persistent todo list web app with JavaScript, HTML, and 
-    CSS using local storage to further my understanding of JavaScript. I also integrated an API to display a daily inspirational quote on the web app 
-    to keep motivation alive.`,
-    url: 'https://amacattack.github.io/todo-list/',
-    repo: 'https://github.com/amacattack/todo-list', // if no repo, the button will not show up
+    img: 'ageless.png',
+    title: 'The Ageless Foundation',
+    info: `During my time as a freelancer for The Ageless foundation I laid the groundwork for a design system and 
+    style guide for use across the company's web properties, increasing cohesiveness and efficiency among team members.`,
+    url: 'https://agelessandrew.com/',
+    repo: 'https://github.com/amacattack/ageless', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'cardMatchingGame.png',
-    title: 'Card Matching Game',
-    info: `To get an understanding of data structures, I implemented game logic with JavaScript to complete this responsive 
-    hiking card matching game.`,
-    url: 'https://amacattack.github.io/matching-game/',
-    repo: 'https://github.com/amacattack/matching-game', // if no repo, the button will not show up
+    img: 'moneyMatch.png',
+    title: 'MoneyMatch',
+    info: `For ETHDenver's Hackathon, I collaborated with a team of three to enable betting on Super Smash Bros. Melee matches.  
+    I personally used TypeScript & React to optimize the frontend for usability using vanilla-extract styling and Radix-UI.`,
+    url: 'https://moneymatch.vercel.app/',
+    repo: 'https://github.com/whoislewys/moneymatch-interface', // if no repo, the button will not show up
   },
 ];
 
