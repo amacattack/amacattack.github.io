@@ -23,7 +23,7 @@ export const aboutData = {
     Because I enjoy coding, I believe that I can be a part of a generation that makes a sustainable world 
     a reality.`,
   resume:
-    'https://docs.google.com/document/d/1EF8HJmifrOfc2d530hAy3nnBXSWV4d2HwOyQnoAHv1M/edit?usp=sharing',
+    'https://docs.google.com/document/d/1rmBiAZRP0oGHnBoMoyHpwd31jGD1oiWvKxsbZ9POfgY/edit?usp=sharing',
 };
 
 // PROJECTS DATA
